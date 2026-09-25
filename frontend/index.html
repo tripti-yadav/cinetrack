@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineTrack</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>CineTrack</h1>
+
+      <input
+        id="search-input"
+        type="search"
+        placeholder="Search movies"
+      />
+
+      <a href="#">My Library</a>
+    </header>
+
+    <main>
+      <h2>My movie catalogue</h2>
+
+      <form id="movie-form">
+        <input
+          id="title-input"
+          type="text"
+          placeholder="Movie title"
+          required
+        />
+
+        <input
+          id="year-input"
+          type="number"
+          placeholder="Year"
+          required
+        />
+
+        <input
+          id="genre-input"
+          type="text"
+          placeholder="Genres, e.g. Sci-Fi, Drama"
+          required
+        />
+
+        <input
+          id="rating-input"
+          type="number"
+          step="0.1"
+          min="0"
+          max="10"
+          placeholder="Rating"
+          required
+        />
+
+        <button type="submit">Add Movie</button>
+      </form>
+      <section id="queue-section">
+        <h2>Tonight's Queue</h2>
+        <div id="queue-list"></div>
+      </section>
+
+      <section id="movie-grid"></section>
+
+      <script src="./app.js"></script>
+    </main>
+  </body>
+</html>
